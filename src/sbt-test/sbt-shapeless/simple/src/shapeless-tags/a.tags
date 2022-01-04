@@ -1,0 +1,4 @@
+package com.example.model
+
+UserId:Long
+UserName:String

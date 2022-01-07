@@ -1,0 +1,12 @@
+name: Scripted Test
+
+on: [pull_request]
+
+jobs:
+  scripted-test:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Run tests
+      run: sbt 'scripted'
+

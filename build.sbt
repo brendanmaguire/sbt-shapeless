@@ -7,6 +7,7 @@ scalaVersion := "2.12.14"
 lazy val root = Project("sbt-shapeless", file("."))
   .enablePlugins(SbtPlugin)
   .settings(
+    organization := "io.github.brendanmaguire",
     libraryDependencies ++= Seq(
       "commons-io" % "commons-io" % Versions.commonsIO,
       "org.scalameta" %% "munit" % Versions.munit % Test,
